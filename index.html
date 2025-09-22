@@ -439,6 +439,31 @@
     });
     card.addEventListener('mouseleave', ()=>{ card.style.transform = ''; });
   });
+/* Mobile uyumluluk için ek medya sorguları */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* Başlık küçültülür */
+  }
+
+  h2, h3 {
+    font-size: 1.2rem;
+  }
+
+  .hero, .about, .projects, .contact {
+    padding: 1.2rem;
+    text-align: center;
+  }
+
+  .card, .project-card {
+    width: 100% !important; /* Kartlar ekrana tam oturur */
+    margin: 0.5rem 0;
+  }
+
+  nav ul {
+    flex-direction: column; /* Menü alt alta */
+    gap: 0.8rem;
+  }
+}
 
   /* ------------------ Defensive: handle iframe X-Frame blocked ------------------ */
   window.addEventListener('error', function(evt){
@@ -450,3 +475,4 @@
 
 </body>
 </html>
+
