@@ -148,12 +148,16 @@
   .reveal.visible{opacity:1;transform:none}
 
   /* small screens */
-  @media (max-width:980px){
+  @media (max-width: 768px){
     .hero{grid-template-columns:1fr;min-height:66vh;padding:28px}
     .hero-right{flex-direction:row;justify-content:space-between}
     .container{padding:22px}
     .contact-wrap{grid-template-columns:1fr}
     .about{flex-direction:column}
+    .buttons { 
+     flex-direction: column;
+      gap: 10px;
+    }
   }
 </style>
 </head>
@@ -450,5 +454,6 @@
 
 </body>
 </html>
+
 
 
